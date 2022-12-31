@@ -1,0 +1,132 @@
+@import 'reset';
+@import 'fonts';
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font: 1rem/1.25rem "OpenSans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #292950 transparent;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #292950;
+    border-radius: 5px;
+  }
+
+
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  max-width: 1364px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+.wrap {
+  flex: 1 0 auto;
+}
+
+.pageWrap {
+  padding: 30px 0;
+}
+
+.infinite-scroll-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden !important;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 540px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.h1 {
+  font: 3.5rem/4.766rem "OpenSansSemiBold", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+  @media (max-width: 450px) {
+    font: 2.5rem/3.375rem "OpenSansSemiBold", Arial, sans-serif;
+  }
+}
+
+.h2 {
+  font: 2rem/2.75rem "OpenSansSemiBold", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  @media (max-width: 450px) {
+    font: 1.5rem/2rem "OpenSansSemiBold", Arial, sans-serif;
+  }
+}
+
+.text {
+  color: #999999;
+  margin-right: 24px;
+}
+
+.hide {
+  @media (max-width: 520px) {
+    display: none;
+  }
+}
+
+.center {
+  text-align: center;
+  margin-right: 0;
+}
+
+.mb {
+  margin-bottom: 32px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mt {
+  margin-top: 16px;
+}
+
+.max {
+  max-width: 354px;
+  margin: -10px auto 0;
+}
+
+.icon {
+  margin-bottom: 67px;
+}
+
+.icon2 {
+  margin-bottom: 44px;
+}
+
+.description {
+  font-size: 1rem !important;
+  line-height: 1.875rem !important;
+  br {
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.fakeButtons {
+  display: flex;
+  align-items: center;
+  max-width: 496px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 16px;
+  flex-wrap: wrap;
+  .btn {
+    max-width: 240px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #000000;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 12px;
+    padding: 16px 20px;
+    cursor: pointer;
+    border: 1px solid #E6E6E6;
+    font: 0.875rem/1.188rem "OpenSans", Arial, sans-serif;
+    @media (max-width: 540px) {
+      max-width: 100%;
+      justify-content: space-between;
+    }
+    span {
+      margin-left: 20px;
+      @media (max-width: 540px) {
+        margin-left: 0;
+      }
+    }
+    .mobile {
+      display: none;
+      @media (max-width: 540px) {
+        display: flex;
+        width: 100%;
+        max-width: 24px;
+        min-width: 24px;
+      }
+    }
+  }
+}

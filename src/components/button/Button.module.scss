@@ -1,0 +1,42 @@
+.button {
+  background-color: #4E74F5;
+  color: #ffffff;
+  border: none;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding: 18px 35px;
+  width: 170px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font: 1rem/1.25rem "OpenSansBold", Arial, "sans-serif";
+  &.w100 {
+    width: 100%;
+    margin-top: 16px;
+    padding: 22px 35px;
+    margin-bottom: 24px;
+    @media (max-width: 450px) {
+      padding: 21px;
+      font: 0.8751rem/0.875rem "OpenSansBold", Arial, "sans-serif";
+    }
+  }
+  &.small {
+    font: 0.875rem/0.875rem "OpenSansBold", Arial, "sans-serif";
+    @media (max-width: 450px) {
+      font: 0.75rem/0.813rem "OpenSansBold", Arial, "sans-serif";
+      padding: 14px 16px;
+      width: 113px;
+    }
+  }
+  &:hover {
+    background-color: #2748b7;
+  }
+  &:disabled {
+    cursor: default;
+    background-color: #4E74F5;
+  }
+}

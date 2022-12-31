@@ -1,0 +1,33 @@
+.header {
+  .wrap {
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        svg {
+          @media (max-width: 450px) {
+            width: 114px;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      .logOut {
+        font: 1rem/1.5rem "OpenSans", Arial, "sans-serif";
+        color: #999999;
+        cursor: pointer;
+        //height: 50px;
+        margin: 13px 0;
+      }
+    }
+  }
+}
